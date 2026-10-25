@@ -1,0 +1,23 @@
+i
+Linux Architecture
+
+Linux has a layered architecture, from hardware at the bottom to applications at the top.
+
+1. Hardware: Physical components such as CPU, RAM, storage, and peripherals.
+
+2. Kernel: The core of Linux, written mainly in C. It runs in kernel space and controls hardware directly. It manages processes, memory, files, devices, and networking. Applications reach it through system calls.
+
+3. Shell: A command interpreter that acts as a bridge between the user and the kernel. Examples: Bash, Zsh.
+
+4. Applications: User-level programs, both GUI (browsers, media players) and command-line (ls, grep, vim).
+
+
+┌──────────────────────┐
+│     Applications     │  User space
+├──────────────────────┤
+│        Shell         │  User space
+├──────────────────────┤
+│        Kernel        │  Kernel space
+├──────────────────────┤
+│       Hardware       │
+└──────────────────────┘
